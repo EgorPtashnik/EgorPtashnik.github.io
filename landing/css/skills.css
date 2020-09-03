@@ -1,0 +1,28 @@
+.skills-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.skill {
+  border: 3px solid whitesmoke;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+}
+.skill:hover {
+  transform: scale(1.1, 1.1);
+  color: var(--main-color);
+  background-color: var(--second-color);
+}
+.skill-desc {
+  margin-top: 0.2rem;
+  max-width: 150px;
+  text-align: center;
+}
+@media only screen and (max-width: 970px) {
+  .skills-wrapper {
+    width: 500px;
+  }
+}

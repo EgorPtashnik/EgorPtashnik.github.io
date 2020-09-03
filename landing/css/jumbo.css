@@ -1,0 +1,31 @@
+.jumbo {
+  background-image: url('../img/bg_1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-around;
+}
+.jumbo-title {
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+}
+.jumbo-second-title {
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 1200px) {
+  .jumbo {
+    background-size: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .jumbo>div>.box-bordered {
+    border: 0.21rem solid;
+  }
+  .jumbo-title {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+  .jumbo-second-title {
+    font-size: 2rem;
+  }
+}

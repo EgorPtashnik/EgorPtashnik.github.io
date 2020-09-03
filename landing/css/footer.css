@@ -1,0 +1,32 @@
+footer {
+  min-height: 300px;
+}
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-shadow: 0 0 5px white;
+  transform: scale(1.05, 1.05);
+}
+
+.input-field {
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+.input-field:focus {
+  box-shadow: 2px 2px 2px #a6ffff, -2px -2px 2px #a6ffff, 2px -2px 2px #a6ffff, -2px 2px 2px #a6ffff;
+}
+.btn {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid;
+  padding: 0.6rem;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--second-color);
+  color: var(--main-color);
+}

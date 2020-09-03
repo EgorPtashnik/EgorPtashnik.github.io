@@ -1,0 +1,27 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 5rem;
+}
+.header-item {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+.header-item:hover {
+  transform: scale(1.1, 1.1);
+  text-shadow: 0 0 2px white;
+}
+.header-item:last-child {
+  margin-right: 10rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .header-item {
+    font-size: 1rem;
+  }
+  .header-item:last-child {
+    margin-right: 0px;
+  }
+}
