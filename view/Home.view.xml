@@ -1,7 +1,0 @@
-<mvc:View controllerName='client.controller.Home' displayBlock='true'
-  xmlns='sap.m'
-  xmlns:mvc='sap.ui.core.mvc'>
-  <Page>
-    <Text text='AAA'/>
-  </Page>
-</mvc:View>

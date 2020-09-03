@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%
+}
+
+body {
+  background-color: #88adff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.paper {
+  border-radius: 5px;
+  background-color: white;
+  height: calc(100% - 50px);
+  max-height: 500px;
+}
+@media only screen and (max-width: 600px) {
+  .paper {
+    width: calc(100% - 10px);
+  }
+  .paper:first-child {
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .paper {
+    margin-top: 10rem;
+    width: 400px;
+  }
+}
+
