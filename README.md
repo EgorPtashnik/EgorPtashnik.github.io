@@ -1,2 +1,2 @@
 # EgorPtashnik.github.io
-Welcome page
+Personal information website
