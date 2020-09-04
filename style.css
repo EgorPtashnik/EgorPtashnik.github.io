@@ -1,40 +1,91 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
-  height: 100%
-}
-
-body {
-  background-color: #88adff;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  margin: 0;
   height: 100%;
 }
-.paper {
-  border-radius: 5px;
-  background-color: white;
-  height: calc(100% - 50px);
-  max-height: 500px;
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background: rgb(60,130,190);
+  background: linear-gradient(144deg, rgba(60,130,190,1) 0%, rgba(175,218,255,1) 54%, rgba(255,255,255,1) 56%, rgba(255,255,255,1) 59%, rgba(175,218,255,1) 61%, rgba(60,130,190,1) 100%);
 }
-@media only screen and (max-width: 600px) {
-  .paper {
-    width: calc(100% - 10px);
-  }
-  .paper:first-child {
-    margin-top: 10rem;
-    margin-bottom: 1rem;
-  }
+p {
+  font-size: 18px;
 }
-@media only screen and (min-width: 600px) {
-  .paper {
-    margin-top: 10rem;
-    width: 400px;
-  }
+.text {
+  color: rgba(0,0,0,0.9);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.container {
+  width: calc(100% - 10px);
+  max-width: 600px;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.5);
+  background-color: white;
+  box-shadow: 10px -10px rgba(0,0,0,1);
+}
+
+.header {
+  padding: 10px;
+  display: flex;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.avatar {
+  margin-left: 20px;
+  border: 0.1px solid rgba(0,0,0,0.2);
+  border-radius: 50%;
+  background: url(./assets/me.jpg) 50% 10%;
+  background-size: 260px 260px;
+  width: 120px;
+  height: 120px;
+}
+
+.header-info {
+  margin: 0 auto;
+}
+.name {
+  margin: 0;
+  letter-spacing: 3px;
+  margin-top: 30px;
+}
+.description {
+  margin: 0;
+}
+
+.content {
+  margin: 10px;
+}
+
+.content-text {
+  margin: 30px;
+  text-align: justify;
+}
+
+.content-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.github {
+  background-image: url(./assets/GitHub-Mark-64px.png);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+}
+.github:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+ .avatar {
+  background-size: 200px 200px;
+  width: 80px;
+  height: 80px;
+ }
+}
